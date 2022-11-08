@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.validation.Valid;
 
 import java.util.List;
 import java.util.Optional;
@@ -33,12 +34,12 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<Cliente> adicionar(@RequestBody Cliente cliente) {
+    public ResponseEntity<Cliente> adicionar(@Valid @RequestBody Cliente cliente) {
         return new ResponseEntity(clienteRepository.save(cliente), HttpStatus.CREATED);
     }
 
     @PutMapping("/{clienteId}")
-    public ResponseEntity<Cliente> atualizar(@PathVariable Long clienteId,
+    public ResponseEntity<Cliente> atualizar(@Valid @PathVariable Long clienteId,
                                              @RequestBody Cliente cliente) {
         if (!clienteRepository.existsById(clienteId)) {
             return ResponseEntity.notFound().build();
