@@ -13,6 +13,11 @@ public class CatalogoClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
 
+    public Cliente buscar(Long clienteId) {
+        return clienteRepository.findById(clienteId)
+                .orElseThrow(() -> new NegocioException("Cliente não encontrado."));
+    }
+
     @Transactional
     public Cliente salvar(Cliente cliente) {
         boolean emailExiste = clienteRepository.findByEmail(cliente.getEmail())
