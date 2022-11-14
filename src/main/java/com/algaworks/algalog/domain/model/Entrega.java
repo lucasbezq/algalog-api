@@ -7,6 +7,8 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Setter
@@ -22,6 +24,9 @@ public class Entrega {
 
     @ManyToOne
     private Cliente cliente;
+
+    @OneToMany(mappedBy = "entrega")
+    private List<Ocorrencia> ocorrencias = new ArrayList<>();
 
     @Embedded
     private Destinatario destinatario;
