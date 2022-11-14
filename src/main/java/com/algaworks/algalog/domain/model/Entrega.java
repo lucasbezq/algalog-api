@@ -25,7 +25,7 @@ public class Entrega {
     @ManyToOne
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "entrega")
+    @OneToMany(mappedBy = "entrega", cascade = CascadeType.ALL)
     private List<Ocorrencia> ocorrencias = new ArrayList<>();
 
     @Embedded
@@ -40,4 +40,13 @@ public class Entrega {
 
     private OffsetDateTime dataFinalizacao;
 
+    public Ocorrencia adicionarOcorrencia(String descricao) {
+        Ocorrencia ocorrencia = new Ocorrencia();
+        ocorrencia.setDescricao(descricao);
+        ocorrencia.setDataRegistro(OffsetDateTime.now());
+        ocorrencia.setEntrega(this);
+        this.getOcorrencias().add(ocorrencia);
+
+        return ocorrencia;
+    }
 }
