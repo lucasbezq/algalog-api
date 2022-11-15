@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "83520087-4766-492a-89fc-b61993643aab",
+		"name": "AlgaLog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13776317"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Clientes - Obter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes - Adicionar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Ana Cristina\",\r\n    \"email\": \"ana@gmail.com\",\r\n    \"telefone\": \"(21)55555-2222\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/entregas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Andrezza Mello\",\r\n    \"email\": \"andrezzamello@gmail.com\",\r\n    \"telefone\": \"(21)99999-2222\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/40",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes - Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entregas",
+			"item": [
+				{
+					"name": "Entregas - Solicitar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": {\r\n        \"id\": 6\r\n    },\r\n    \"destinatario\": {\r\n        \"nome\": \"Andrezza Mello\",\r\n        \"logradouro\": \"Taquara\",\r\n        \"numero\": \"312\",\r\n        \"complemento\": \"Bloco 2\",\r\n        \"bairro\": \"Jacarépagua\"\r\n    },\r\n    \"taxa\": 50.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/entregas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Entregas - Obter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entregas/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Entregas - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entregas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Entregas - Finalizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/entregas/1/finalizacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"1",
+								"finalizacao"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ocorrencias",
+			"item": [
+				{
+					"name": "Ocorrencias - Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Tentativa sem sucesso (não estava em casa).\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/entregas/1/ocorrencias",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"1",
+								"ocorrencias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ocorrencias - Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Tentativa sem sucesso (não estava em casa).\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/entregas/1/ocorrencias",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"1",
+								"ocorrencias"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
