@@ -24,8 +24,8 @@ Trata-se de um sistema básico, criado para o gerenciamento de entregas, por mei
 </br></br>
 4° Acesse a URL <code>http://localhost:8080/entregas</code> pelo navegador para visualizar a aplicação
 </br>
-<li>Para uma melhor experiência de acosso aos endpoints da API, é recomendado a utilização de um API Client, para facilitar a interação e visualização das APIs, como exemplos mais famosos temos o <a href="https://www.postman.com/">Postman</a> e o <a href="https://insomnia.rest/">Insomnia</a>.</li>
-<li>Importe o arquivo <a href="https://schema.getpostman.com/json/collection/v2.1.0/collection.json">AlgaLog API.postman_collection.json</a> no seu API Client favorito, que todos os endpoints da API serão disponibilizados.</li>
+<li>Para uma melhor experiência de acesso aos endpoints da API, é recomendado a utilização de um API Client, para facilitar a interação e visualização das APIs, como exemplos mais famosos temos o <a href="https://www.postman.com/">Postman</a> e o <a href="https://insomnia.rest/">Insomnia</a>.</li>
+<li>Importe o arquivo <a href="https://schema.getpostman.com/json/collection/v2.1.0/collection.json">AlgaLog API.postman_collection.json</a> no seu API Client de preferência, que todos os endpoints da API serão disponibilizados.</li>
 </br>
 
 ### Ferramentas e Tecnologias utilizadas
