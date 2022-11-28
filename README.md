@@ -1,19 +1,19 @@
-### AlgaLog API
+# AlgaLog API
 
 REST API de um sistema de **Gerenciamento de Entregas**, implementado em Java com Spring Boot.
 
-### Sistema de Gerenciamento de Entregas
+# Sistema de Gerenciamento de Entregas
 Trata-se de um sistema básico, criado para o gerenciamento de entregas, por meio do cadastro dos principais dados de uma entrega, o registro dos relacionamentos com o respectivo Cliente e Destinatário, e o controle do fluxo da entrega, por meio do status, com a possibilidade de registrar o histórico de possíveis ocorrencias relacionadas às entregas. 
 
 ![Untitled](https://user-images.githubusercontent.com/68922997/201790444-3e7d9e8c-f5e7-4236-9b5a-15a42ee22412.png)
 
-### Requisitos
+# Requisitos
 <li><a href="https://git-scm.com/">Git</li>
 <li><a href="https://www.oracle.com/java/technologies/downloads/">Java JDK</li>
 <li><a href="https://dev.mysql.com/downloads">MySQL</li>
 <li><a href="https://maven.apache.org/download.cgi">Maven</li>
 
-### Executando o Projeto
+# Executando o Projeto
 1° Baixe o repositório deste projeto executando o comando Git: `git clone https://github.com/aguiardafa/gerenciamento-entregas-api`;
 </br></br>
 2° Execute o comando Maven `mvn clean install` pelo terminal na raiz da pasta do repositório, para baixar as dependências do projeto através do Maven;
@@ -28,7 +28,7 @@ Trata-se de um sistema básico, criado para o gerenciamento de entregas, por mei
 <li>Importe o arquivo <a href="https://schema.getpostman.com/json/collection/v2.1.0/collection.json">AlgaLog API.postman_collection.json</a> no seu API Client de preferência, que todos os endpoints da API serão disponibilizados.</li>
 </br>
 
-### Ferramentas e Tecnologias utilizadas
+# Ferramentas e Tecnologias utilizadas
 <li><a href="https://spring.io/">Spring</li>
 <li><a href="https://www.devmedia.com.br/introducao-a-jpa-java-persistence-api/28173">JPA</li>
 <li><a href="https://www.postman.com/">Postman</li>
