@@ -13,7 +13,7 @@ Trata-se de um sistema básico, criado para o gerenciamento de entregas, por mei
 <li><a href="https://dev.mysql.com/downloads">MySQL</li>
 <li><a href="https://maven.apache.org/download.cgi">Maven</li>
 
-# Executando o Projeto
+# :gear: Executando o Projeto
 1° Baixe o repositório deste projeto executando o comando Git: `git clone https://github.com/aguiardafa/gerenciamento-entregas-api`;
 </br></br>
 2° Execute o comando Maven `mvn clean install` pelo terminal na raiz da pasta do repositório, para baixar as dependências do projeto através do Maven;
@@ -28,7 +28,7 @@ Trata-se de um sistema básico, criado para o gerenciamento de entregas, por mei
 <li>Importe o arquivo <a href="https://schema.getpostman.com/json/collection/v2.1.0/collection.json">AlgaLog API.postman_collection.json</a> no seu API Client de preferência, que todos os endpoints da API serão disponibilizados.</li>
 </br>
 
-# Ferramentas e Tecnologias utilizadas
+# :hammer_and_wrench: Ferramentas e Tecnologias utilizadas
 <li><a href="https://spring.io/">Spring</li>
 <li><a href="https://www.devmedia.com.br/introducao-a-jpa-java-persistence-api/28173">JPA</li>
 <li><a href="https://www.postman.com/">Postman</li>
